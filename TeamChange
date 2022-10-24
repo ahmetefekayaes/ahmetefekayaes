@@ -1,0 +1,9 @@
+-- Basic Variables
+local teams = game:GetService("Teams")
+local plruserid = -- YOUR ID
+-- Change role
+game.Players.PlayerAdded:Connect(function(player)
+    if player.UserId == plruserid then
+        player.Team = teams.Owner
+    end
+end)
